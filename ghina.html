@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+<h1>Form HTML</h1>
+</head>
+<body style="background-color:lightgrey;">
+<font face="Times New Roman">
+<body>
+<form align="left">
+ 
+Name:
+<input type="text" name="name" id="name"><br><br>
+
+Gender:
+<input type="radio" name="radiogroup1" value="radio" id="radiogroup1"> Man
+<input type="radio" name="radiogroup1" value="radio" id="radiogroup2"> Woman<br><br>
+
+Address:
+<input type="Address" name="Address" id="Address"><br><br>
+
+Country:<select name="country" id="country">
+        <option selected>-- Select Group --</option>
+        <option>Indonesia</option>
+        <option>London</option>
+        <option>Japan</option>
+        <option>Saudi</option>
+      </select><br>
+      <br>
+
+Email:
+<input type="email" name="email" id="email"><br><br>
+
+Photo:
+<input type="file" id="pic" name="pic" style="display:none" onchange="document.getElementById('filename').value=this.value">
+<input type="text" id="filename">
+<input type="button" value="Browser" onclick="document.getElementById('pic').click()"><br><br>
+
+Comment:
+<textarea type="text" name="comment" id="comment" rows="6" cols="45"></textarea>
+<button type="submit">Submit</button><br><br>
+<b>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Form Registrasi</b>
+</form>
+</body>
+</html>
